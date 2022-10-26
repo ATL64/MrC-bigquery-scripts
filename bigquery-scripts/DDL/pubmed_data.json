@@ -1,0 +1,522 @@
+[
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "abstract",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "fields": [
+              {
+                "mode": "REPEATED",
+                "name": "names_ml",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "nameml",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "affilstr",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "nameconsortium",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "names_std",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "authors",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "name",
+                "type": "STRING"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "title",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "pubmed",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "doi",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "pii",
+                "type": "STRING"
+              },
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "db",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "tagstr",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "REPEATED",
+                "name": "other",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "ids",
+            "type": "RECORD"
+          },
+          {
+            "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "trans",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "issn",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "name",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "iso_jta",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "ml_jta",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "title",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "year",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "hour",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "day",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "minute",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "month",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "date_std",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "pubstatus",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "history",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "pages",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "issue",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "volume",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "year",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "day",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "month",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "date_std",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "exp",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "type",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "retract",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "language",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "pubstatus",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "imp",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "from_journal",
+            "type": "RECORD"
+          },
+          {
+              "fields": [
+              {
+                "fields": [
+                  {
+                    "mode": "NULLABLE",
+                    "name": "trans",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "issn",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "name",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "iso_jta",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "ml_jta",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "title",
+                "type": "RECORD"
+              },
+              {
+                "fields": [
+                  {
+                    "fields": [
+                      {
+                        "fields": [
+                          {
+                            "mode": "NULLABLE",
+                            "name": "year",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "hour",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "day",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "minute",
+                            "type": "INTEGER"
+                          },
+                          {
+                            "mode": "NULLABLE",
+                            "name": "month",
+                            "type": "INTEGER"
+                          }
+                        ],
+                        "mode": "NULLABLE",
+                        "name": "date_std",
+                        "type": "RECORD"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "pubstatus",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "REPEATED",
+                    "name": "history",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "pages",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "issue",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "volume",
+                    "type": "STRING"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "year",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "day",
+                        "type": "INTEGER"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "month",
+                        "type": "INTEGER"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "date_std",
+                    "type": "RECORD"
+                  },
+                  {
+                    "fields": [
+                      {
+                        "mode": "NULLABLE",
+                        "name": "exp",
+                        "type": "STRING"
+                      },
+                      {
+                        "mode": "NULLABLE",
+                        "name": "type",
+                        "type": "STRING"
+                      }
+                    ],
+                    "mode": "NULLABLE",
+                    "name": "retract",
+                    "type": "RECORD"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "language",
+                    "type": "STRING"
+                  },
+                  {
+                    "mode": "NULLABLE",
+                    "name": "pubstatus",
+                    "type": "STRING"
+                  }
+                ],
+                "mode": "NULLABLE",
+                "name": "imp",
+                "type": "RECORD"
+              }
+            ],
+            "mode": "NULLABLE",
+            "name": "from_book",
+            "type": "RECORD"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "cit",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "pmid",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "status",
+        "type": "STRING"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "idnum",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "term",
+            "type": "STRING"
+          },
+          {
+            "fields": [
+              {
+                "mode": "NULLABLE",
+                "name": "mp",
+                "type": "STRING"
+              },
+              {
+                "mode": "NULLABLE",
+                "name": "subh",
+                "type": "STRING"
+              }
+            ],
+            "mode": "REPEATED",
+            "name": "qual",
+            "type": "RECORD"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "mp",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "mesh",
+        "type": "RECORD"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "year",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "hour",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "day",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "minute",
+            "type": "INTEGER"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "month",
+            "type": "INTEGER"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "em_std",
+        "type": "RECORD"
+      },
+      {
+        "mode": "REPEATED",
+        "name": "pub_type",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "type",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "name",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "substance",
+        "type": "RECORD"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "medent",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "pmid",
+    "type": "STRING"
+  }
+]
